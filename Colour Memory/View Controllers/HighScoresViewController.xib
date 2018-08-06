@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HighScoresViewController" customModule="Colour_Memory" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Foy-pC-niY" id="VZO-ss-HNm"/>
+                <outlet property="highScoresLabel" destination="eeV-9C-NlP" id="kPc-lL-ich"/>
+                <outlet property="tableView" destination="Br9-53-EnO" id="A0b-7a-bBB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="v11-c6-wKq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Br9-53-EnO">
+                    <rect key="frame" x="0.0" y="86" width="375" height="581"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Scores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeV-9C-NlP">
+                    <rect key="frame" x="130" y="33" width="114" height="23"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                    <color key="textColor" red="0.1137254902" green="0.1137254902" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foy-pC-niY">
+                    <rect key="frame" x="16" y="26" width="34" height="30"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="didPressBackButton:" destination="-1" eventType="touchUpInside" id="VNg-LV-MC3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Br9-53-EnO" firstAttribute="top" secondItem="eeV-9C-NlP" secondAttribute="bottom" constant="30" id="076-Et-k6r"/>
+                <constraint firstItem="Foy-pC-niY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="348-w1-KAO"/>
+                <constraint firstItem="Br9-53-EnO" firstAttribute="centerX" secondItem="eeV-9C-NlP" secondAttribute="centerX" id="3U4-Br-em2"/>
+                <constraint firstItem="Br9-53-EnO" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="BV0-5G-wwm"/>
+                <constraint firstItem="eeV-9C-NlP" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="K3a-ua-Xq3"/>
+                <constraint firstItem="eeV-9C-NlP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="13" id="XTI-Kr-uwf"/>
+                <constraint firstItem="Foy-pC-niY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gGm-dI-t4U"/>
+                <constraint firstItem="Br9-53-EnO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vvl-KO-dmm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

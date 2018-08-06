@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCollectionViewCell" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="Colour_Memory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="382"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="382"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_bg" translatesAutoresizingMaskIntoConstraints="NO" id="GEQ-Ky-0dM">
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="382"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GEQ-Ky-0dM" secondAttribute="bottom" id="AMw-dh-DLP"/>
+                <constraint firstItem="GEQ-Ky-0dM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RHu-6e-Eo3"/>
+                <constraint firstAttribute="trailing" secondItem="GEQ-Ky-0dM" secondAttribute="trailing" id="Vom-Uk-Pk2"/>
+                <constraint firstItem="GEQ-Ky-0dM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nqG-oS-5ey"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="314" height="382"/>
+            <connections>
+                <outlet property="cardView" destination="GEQ-Ky-0dM" id="05f-QL-9om"/>
+            </connections>
+            <point key="canvasLocation" x="-274" y="-214"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="card_bg" width="152" height="190"/>
+    </resources>
+</document>
